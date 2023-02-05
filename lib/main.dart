@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart';
@@ -11,7 +11,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -64,10 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
 
     return Scaffold(
-        backgroundColor: Colors.black26,
-        // appBar: AppBar(
-        //   title: Center(child: Text(widget.title)),
-        // ),
+        backgroundColor: Colors.brown,
+        appBar: AppBar(
+          title: Center(child: Text(widget.title)),
+        ),
         body: Center(
           child: StreamBuilder(
               stream: _stream,

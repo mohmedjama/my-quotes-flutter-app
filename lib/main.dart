@@ -75,7 +75,7 @@ class _thequoutoappState extends State<thequoutoapp> {
           child: StreamBuilder(
               stream: _stream,
               builder: (BuildContext ctx, AsyncSnapshot snapshot) {
-                if (snapshot.data == "waiting") {
+                if (snapshot.data == "just waiting") {
                   return const Center(
                       child: Text("Waiting fot the Quotes....."));
                 }

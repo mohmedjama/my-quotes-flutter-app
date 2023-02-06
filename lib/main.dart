@@ -43,7 +43,7 @@ class _thequoutoappState extends State<thequoutoapp> {
 
   getQuotes() async {
     newImage();
-    _streamController.add("waiting");
+    _streamController.add("just waiting");
     response = await get(Uri.parse(_url));
     _streamController.add(json.decode(response.body));
   }

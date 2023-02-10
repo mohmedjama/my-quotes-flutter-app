@@ -77,7 +77,7 @@ class _thequoutoappState extends State<thequoutoapp> {
               builder: (BuildContext ctx, AsyncSnapshot snapshot) {
                 if (snapshot.data == "just waiting") {
                   return const Center(
-                      child: Text("Waiting fot the Quotes....."));
+                      child: Text("Waiting fot the Quote of the day"));
                 }
                 return GestureDetector(
                   onDoubleTap: () {
